@@ -1,7 +1,7 @@
 # R Cheat Sheet
 
 Eine Zusammenfassung nützlicher Funktionen für die Rechner Klausur
-der Vorlesung *Mathematische Modellbildung und Statistik für Naturwissenschaftler"
+der Vorlesung *Mathematische Modellbildung und Statistik für Naturwissenschaftler*
 von der FAU Erlangen/Nürnberg.
 
 # Dokument erzeugen
