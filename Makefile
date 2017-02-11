@@ -1,19 +1,21 @@
-CSS=pandoc.css
+CSS=style.css
 
-.PHONY: html, pdf, clean, all
+.PHONY: all, html, pdf, clean
 
-R_Cheatsheet.html: R_Cheatsheet.md
+all: pdf html
+
+rcheatsheet.html: rcheatsheet.md
 	cat $< | ./highlight_code.py | pandoc -f markdown_github --css $(CSS) --highlight-style kate -o $@ -;
 	sed -i -f remove_table_width.sed $@
 
-R_Cheatsheet.pdf: R_Cheatsheet.html
-	pandoc -f html -o $@
+rcheatsheet.pdf: rcheatsheet.html
+	pandoc -f html $< -o $@
 
-html: R_Cheatsheet.html
 
-pdf: R_Cheatsheet.pdf
+html: rcheatsheet.html
+
+pdf: rcheatsheet.pdf
 
 clean:
 	rm *.pdf *.html
 
-all: pdf html
