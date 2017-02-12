@@ -9,6 +9,7 @@ an der FAU Erlangen/Nürnberg.
 * POSIX-System (Linux, Mac OSX, BSD, ...)
 * make
 * git
+* python3
 * [pandoc](http://pandoc.org/)
 
 ## Dokument erzeugen
