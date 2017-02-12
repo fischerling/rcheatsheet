@@ -74,8 +74,11 @@
 
 | Befehl | Bedeutung |
 | --- | --- |
-| <c r></c> | |
-
+| <c r>readAAStringSet("Pfad/zu/Datei.fasta")</c> | Liest Sequenz aus Datei |
+| <c r>nchar(s)</c> | Liefert die Länge einer Sequenz |
+| <c r>pairwiseAlignment(seq1,seq2,substitutionMatrix=BLOSUM62,gapOpening=3,gapExtension=1)</c> | Liefert ein globales Alignment für seq1 und seq2 |
+| <c r>compareStrings(alignment)</c> | Stellt das Alignment graphisch dar |
+| <c r>nchar(alignment)</c> | Liefert die Länge des optimalen Alignment |
 <!--- damit pandoc syntax highlighting benutzt -->
 ```c++
 ```
