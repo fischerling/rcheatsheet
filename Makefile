@@ -4,7 +4,7 @@ CSS=style.css
 
 all: pdf html
 
-rcheatsheet.html: rcheatsheet.md
+rcheatsheet.html: rcheatsheet.md $(CSS)
 	cat $< | ./highlight_code.py | pandoc -s -S -A footer.html -f markdown_github -H $(CSS) -o $@ -;
 	sed -i -f remove_table_width.sed $@
 
@@ -17,5 +17,5 @@ html: rcheatsheet.html
 pdf: rcheatsheet.pdf
 
 clean:
-	rm *.pdf *.html
+	rm *.pdf rcheatsheet.html
 
