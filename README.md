@@ -2,11 +2,11 @@
 
 Eine Zusammenfassung nützlicher Funktionen für die Rechner Klausur
 der Vorlesung *Mathematische Modellbildung und Statistik für Naturwissenschaftler*
-von der FAU Erlangen/Nürnberg.
+an der FAU Erlangen/Nürnberg.
 
 # Dokument erzeugen
 
-Um das Dokument zu erzeugen wird ein POSIX System mit make und git vorrausgesetzt.
+Um das Dokument zu erzeugen wird ein POSIX System mit make,git un pandoc vorrausgesetzt.
 
 1. Klonen des Repositories: `git clone https://github.com/fischerling/rcheatsheet`
 2. `cd rcheatsheet`

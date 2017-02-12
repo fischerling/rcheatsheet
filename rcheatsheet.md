@@ -61,7 +61,7 @@
 | Befehl | Bedeutung |
 | --- | --- |
 | <c r>binom.test(n, N, p)</c> | Testet Hypothese P[X=n] = p gegen die Alternativhypothese P[X=n] != p für binomialverteilte Zufallsvariable |
-| <c r>binom.test(n, N, p, alternative="lesser")</c> | Testet Alternativhypothese P[X=n] < p / P[X=n] > p bei alternitive="greater" |
+| <c r>binom.test(n, N, p, alternative="less")</c> | Testet Alternativhypothese P[X=n] < p / P[X=n] > p bei alternitive="greater" |
 | <c r>chisq.test(v)</c> | Testet die Hypothese das alle Ereignisse in v gleich wahrscheinlich sind |
 | <c r>chisq.test(v, p)</c> | Testet die Hypothese das die Ereignisse in v mit Wahrscheinlichkeit p eintreten |
 
