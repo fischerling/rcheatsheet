@@ -62,8 +62,13 @@
 | --- | --- |
 | <c r>binom.test(n, N, p)</c> | Testet Hypothese P[X=n] = p gegen die Alternativhypothese P[X=n] != p für binomialverteilte Zufallsvariable |
 | <c r>binom.test(n, N, p, alternative="less")</c> | Testet Alternativhypothese P[X=n] < p / P[X=n] > p bei alternitive="greater" |
-| <c r>chisq.test(v)</c> | Testet die Hypothese das alle Ereignisse in v gleich wahrscheinlich sind |
-| <c r>chisq.test(v, p)</c> | Testet die Hypothese das die Ereignisse in v mit Wahrscheinlichkeit p eintreten |
+| <c r>chisq.test(v)</c> | Testet die Hypothese, dass alle Ereignisse in v gleich wahrscheinlich sind |
+| <c r>chisq.test(v, p)</c> | Testet die Hypothese, dass die Ereignisse in v mit Wahrscheinlichkeit p eintreten |
+| <c r>shapiro.test(x)</c> | Testet die Hypothese, dass die Variable x normalverteilt ist |
+| <c r>t.test(x, conf.level=p)</c> | Liefert das Intervall in dem der Erwartungswert mit Wahrscheinlichkeit p liegt |
+| <c r>t.test()</c> | **ACHTUNG** T-Tests können nur für normalverteilte Variablen interpretiert werden |
+| <c r>t.test(x, mu=1)</c> | Testet ob der beobachtete Erwartungswert dem Theoretischen (mu) entspricht |
+| <c r>t.test(x, y, paired=TRUE)</c> | Testet ob x und y den gleichen Erwartungswert haben ("less" und "greater" möglich) |
 
 ### Sequenz Alignment
 
