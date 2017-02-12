@@ -17,3 +17,8 @@ an der FAU Erlangen/Nürnberg.
 1. Klonen des Repositories: `git clone https://github.com/fischerling/rcheatsheet`
 2. `cd rcheatsheet`
 2. Erzeugen des pdf und html Version: `make`
+
+
+## Danke
+
+* Wolfgang für die schnelle css Hilfe
