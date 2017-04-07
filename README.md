@@ -10,7 +10,7 @@ an der FAU Erlangen/Nürnberg.
 * make
 * git
 * python3
-* [pandoc](http://pandoc.org/)
+* [pandoc](http://pandoc.org/) > 1.10
 
 ## Dokument erzeugen
 
