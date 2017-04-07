@@ -15,11 +15,8 @@ def main():
             break
         m = re.search(code_re, s)
         if m:
-            pandoc = subprocess.Popen(["pandoc","-f", "markdown", "-"],
-                universal_newlines=True, stdin=subprocess.PIPE,
-                stdout=subprocess.PIPE)
-            code, err = pandoc.communicate(input=code_format.format(m.group(1), m.group(2)))
-            pandoc.kill()
+            code = subprocess.check_output(["pandoc","-f", "markdown", "-"],
+                universal_newlines=True, input=code_format.format(m.group(1), m.group(2)))
             s = re.sub(code_re, code, s)
             s = s.replace('\n', '')
         print(s)
